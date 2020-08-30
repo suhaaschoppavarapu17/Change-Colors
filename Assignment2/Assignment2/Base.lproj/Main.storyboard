@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WorldWonders" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-2b-LkF">
+                                <rect key="frame" x="57" y="74" width="300" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="9Wl-tD-qem"/>
+                                    <constraint firstAttribute="width" constant="300" id="Yjm-cE-ACb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rig-fi-Hhj">
+                                <rect key="frame" x="77" y="334" width="260" height="29"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8t-b6-GNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rig-fi-Hhj" firstAttribute="top" secondItem="CZB-2b-LkF" secondAttribute="bottom" constant="30" id="hCc-80-fs9"/>
+                            <constraint firstItem="CZB-2b-LkF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j1p-vI-Zwk"/>
+                            <constraint firstItem="CZB-2b-LkF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="kSc-q6-MRS"/>
+                            <constraint firstItem="rig-fi-Hhj" firstAttribute="trailing" secondItem="CZB-2b-LkF" secondAttribute="trailing" constant="-20" id="mQ6-Bi-AiA"/>
+                            <constraint firstItem="rig-fi-Hhj" firstAttribute="leading" secondItem="CZB-2b-LkF" secondAttribute="leading" constant="20" id="y7U-NS-ubP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="rig-fi-Hhj" id="AQV-OT-20j"/>
+                        <outlet property="imageView" destination="CZB-2b-LkF" id="nZ4-vx-UAh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WorldWonders" width="640" height="480"/>
+    </resources>
+</document>
